@@ -12,49 +12,34 @@
 		9B4C180518849EAD00E31D3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4C180418849EAD00E31D3C /* UIKit.framework */; };
 		9B4C180B18849EAD00E31D3C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B4C180918849EAD00E31D3C /* InfoPlist.strings */; };
 		9B4C180D18849EAD00E31D3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C180C18849EAD00E31D3C /* main.m */; };
-		9B4C181118849EAD00E31D3C /* ERSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C181018849EAD00E31D3C /* ERSAppDelegate.m */; };
+		9B4C181118849EAD00E31D3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C181018849EAD00E31D3C /* AppDelegate.m */; };
 		9B4C181418849EAD00E31D3C /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4C181218849EAD00E31D3C /* Main_iPhone.storyboard */; };
 		9B4C181718849EAD00E31D3C /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4C181518849EAD00E31D3C /* Main_iPad.storyboard */; };
-		9B4C181A18849EAD00E31D3C /* ERSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C181918849EAD00E31D3C /* ERSViewController.m */; };
+		9B4C181A18849EAD00E31D3C /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C181918849EAD00E31D3C /* DemoViewController.m */; };
 		9B4C181C18849EAD00E31D3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B4C181B18849EAD00E31D3C /* Images.xcassets */; };
-		9B4C182318849EAD00E31D3C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4C182218849EAD00E31D3C /* XCTest.framework */; };
-		9B4C182418849EAD00E31D3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4C180018849EAD00E31D3C /* Foundation.framework */; };
-		9B4C182518849EAD00E31D3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4C180418849EAD00E31D3C /* UIKit.framework */; };
-		9B4C182D18849EAD00E31D3C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B4C182B18849EAD00E31D3C /* InfoPlist.strings */; };
-		9B4C182F18849EAD00E31D3C /* BubbleButtonDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C182E18849EAD00E31D3C /* BubbleButtonDemoTests.m */; };
+		9B4C183D18859A0200E31D3C /* RSExplodingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C183C18859A0200E31D3C /* RSExplodingButton.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		9B4C182618849EAD00E31D3C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9B4C17F518849EAD00E31D3C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9B4C17FC18849EAD00E31D3C;
-			remoteInfo = BubbleButtonDemo;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		9B4C17FD18849EAD00E31D3C /* BubbleButtonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BubbleButtonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B4C17FD18849EAD00E31D3C /* ExplodingButtonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExplodingButtonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B4C180018849EAD00E31D3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9B4C180218849EAD00E31D3C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		9B4C180418849EAD00E31D3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		9B4C180818849EAD00E31D3C /* BubbleButtonDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BubbleButtonDemo-Info.plist"; sourceTree = "<group>"; };
+		9B4C180818849EAD00E31D3C /* ExplodingButtonDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExplodingButtonDemo-Info.plist"; sourceTree = "<group>"; };
 		9B4C180A18849EAD00E31D3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9B4C180C18849EAD00E31D3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9B4C180E18849EAD00E31D3C /* BubbleButtonDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BubbleButtonDemo-Prefix.pch"; sourceTree = "<group>"; };
-		9B4C180F18849EAD00E31D3C /* ERSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ERSAppDelegate.h; sourceTree = "<group>"; };
-		9B4C181018849EAD00E31D3C /* ERSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ERSAppDelegate.m; sourceTree = "<group>"; };
+		9B4C180E18849EAD00E31D3C /* ExplodingButtonDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExplodingButtonDemo-Prefix.pch"; sourceTree = "<group>"; };
+		9B4C180F18849EAD00E31D3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9B4C181018849EAD00E31D3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9B4C181318849EAD00E31D3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		9B4C181618849EAD00E31D3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		9B4C181818849EAD00E31D3C /* ERSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ERSViewController.h; sourceTree = "<group>"; };
-		9B4C181918849EAD00E31D3C /* ERSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ERSViewController.m; sourceTree = "<group>"; };
+		9B4C181818849EAD00E31D3C /* DemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		9B4C181918849EAD00E31D3C /* DemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 		9B4C181B18849EAD00E31D3C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		9B4C182118849EAD00E31D3C /* BubbleButtonDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BubbleButtonDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B4C182218849EAD00E31D3C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		9B4C182A18849EAD00E31D3C /* BubbleButtonDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BubbleButtonDemoTests-Info.plist"; sourceTree = "<group>"; };
-		9B4C182C18849EAD00E31D3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9B4C182E18849EAD00E31D3C /* BubbleButtonDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BubbleButtonDemoTests.m; sourceTree = "<group>"; };
+		9B4C183B18859A0200E31D3C /* RSExplodingButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSExplodingButton.h; sourceTree = "<group>"; };
+		9B4C183C18859A0200E31D3C /* RSExplodingButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSExplodingButton.m; sourceTree = "<group>"; };
+		9B4C183E18859CCA00E31D3C /* DLogMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLogMacro.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,24 +53,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9B4C181E18849EAD00E31D3C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9B4C182318849EAD00E31D3C /* XCTest.framework in Frameworks */,
-				9B4C182518849EAD00E31D3C /* UIKit.framework in Frameworks */,
-				9B4C182418849EAD00E31D3C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		9B4C17F418849EAD00E31D3C = {
 			isa = PBXGroup;
 			children = (
-				9B4C180618849EAD00E31D3C /* BubbleButtonDemo */,
-				9B4C182818849EAD00E31D3C /* BubbleButtonDemoTests */,
+				9B4C180618849EAD00E31D3C /* ExplodingButtonDemo */,
 				9B4C17FF18849EAD00E31D3C /* Frameworks */,
 				9B4C17FE18849EAD00E31D3C /* Products */,
 			);
@@ -94,8 +68,7 @@
 		9B4C17FE18849EAD00E31D3C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9B4C17FD18849EAD00E31D3C /* BubbleButtonDemo.app */,
-				9B4C182118849EAD00E31D3C /* BubbleButtonDemoTests.xctest */,
+				9B4C17FD18849EAD00E31D3C /* ExplodingButtonDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,56 +84,49 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9B4C180618849EAD00E31D3C /* BubbleButtonDemo */ = {
+		9B4C180618849EAD00E31D3C /* ExplodingButtonDemo */ = {
 			isa = PBXGroup;
 			children = (
-				9B4C180F18849EAD00E31D3C /* ERSAppDelegate.h */,
-				9B4C181018849EAD00E31D3C /* ERSAppDelegate.m */,
+				9B4C183F1888474E00E31D3C /* ExplodingButton */,
+				9B4C183E18859CCA00E31D3C /* DLogMacro.h */,
+				9B4C180F18849EAD00E31D3C /* AppDelegate.h */,
+				9B4C181018849EAD00E31D3C /* AppDelegate.m */,
 				9B4C181218849EAD00E31D3C /* Main_iPhone.storyboard */,
 				9B4C181518849EAD00E31D3C /* Main_iPad.storyboard */,
-				9B4C181818849EAD00E31D3C /* ERSViewController.h */,
-				9B4C181918849EAD00E31D3C /* ERSViewController.m */,
+				9B4C181818849EAD00E31D3C /* DemoViewController.h */,
+				9B4C181918849EAD00E31D3C /* DemoViewController.m */,
 				9B4C181B18849EAD00E31D3C /* Images.xcassets */,
 				9B4C180718849EAD00E31D3C /* Supporting Files */,
 			);
-			path = BubbleButtonDemo;
+			path = ExplodingButtonDemo;
 			sourceTree = "<group>";
 		};
 		9B4C180718849EAD00E31D3C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9B4C180818849EAD00E31D3C /* BubbleButtonDemo-Info.plist */,
+				9B4C180818849EAD00E31D3C /* ExplodingButtonDemo-Info.plist */,
 				9B4C180918849EAD00E31D3C /* InfoPlist.strings */,
 				9B4C180C18849EAD00E31D3C /* main.m */,
-				9B4C180E18849EAD00E31D3C /* BubbleButtonDemo-Prefix.pch */,
+				9B4C180E18849EAD00E31D3C /* ExplodingButtonDemo-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9B4C182818849EAD00E31D3C /* BubbleButtonDemoTests */ = {
+		9B4C183F1888474E00E31D3C /* ExplodingButton */ = {
 			isa = PBXGroup;
 			children = (
-				9B4C182E18849EAD00E31D3C /* BubbleButtonDemoTests.m */,
-				9B4C182918849EAD00E31D3C /* Supporting Files */,
+				9B4C183B18859A0200E31D3C /* RSExplodingButton.h */,
+				9B4C183C18859A0200E31D3C /* RSExplodingButton.m */,
 			);
-			path = BubbleButtonDemoTests;
-			sourceTree = "<group>";
-		};
-		9B4C182918849EAD00E31D3C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9B4C182A18849EAD00E31D3C /* BubbleButtonDemoTests-Info.plist */,
-				9B4C182B18849EAD00E31D3C /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
+			name = ExplodingButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9B4C17FC18849EAD00E31D3C /* BubbleButtonDemo */ = {
+		9B4C17FC18849EAD00E31D3C /* ExplodingButtonDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B4C183218849EAD00E31D3C /* Build configuration list for PBXNativeTarget "BubbleButtonDemo" */;
+			buildConfigurationList = 9B4C183218849EAD00E31D3C /* Build configuration list for PBXNativeTarget "ExplodingButtonDemo" */;
 			buildPhases = (
 				9B4C17F918849EAD00E31D3C /* Sources */,
 				9B4C17FA18849EAD00E31D3C /* Frameworks */,
@@ -170,28 +136,10 @@
 			);
 			dependencies = (
 			);
-			name = BubbleButtonDemo;
+			name = ExplodingButtonDemo;
 			productName = BubbleButtonDemo;
-			productReference = 9B4C17FD18849EAD00E31D3C /* BubbleButtonDemo.app */;
+			productReference = 9B4C17FD18849EAD00E31D3C /* ExplodingButtonDemo.app */;
 			productType = "com.apple.product-type.application";
-		};
-		9B4C182018849EAD00E31D3C /* BubbleButtonDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9B4C183518849EAD00E31D3C /* Build configuration list for PBXNativeTarget "BubbleButtonDemoTests" */;
-			buildPhases = (
-				9B4C181D18849EAD00E31D3C /* Sources */,
-				9B4C181E18849EAD00E31D3C /* Frameworks */,
-				9B4C181F18849EAD00E31D3C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9B4C182718849EAD00E31D3C /* PBXTargetDependency */,
-			);
-			name = BubbleButtonDemoTests;
-			productName = BubbleButtonDemoTests;
-			productReference = 9B4C182118849EAD00E31D3C /* BubbleButtonDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -202,13 +150,8 @@
 				CLASSPREFIX = ERS;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Rudi Strahl";
-				TargetAttributes = {
-					9B4C182018849EAD00E31D3C = {
-						TestTargetID = 9B4C17FC18849EAD00E31D3C;
-					};
-				};
 			};
-			buildConfigurationList = 9B4C17F818849EAD00E31D3C /* Build configuration list for PBXProject "BubbleButtonDemo" */;
+			buildConfigurationList = 9B4C17F818849EAD00E31D3C /* Build configuration list for PBXProject "ExplodingButtonDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -221,8 +164,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9B4C17FC18849EAD00E31D3C /* BubbleButtonDemo */,
-				9B4C182018849EAD00E31D3C /* BubbleButtonDemoTests */,
+				9B4C17FC18849EAD00E31D3C /* ExplodingButtonDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -239,14 +181,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9B4C181F18849EAD00E31D3C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9B4C182D18849EAD00E31D3C /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -255,28 +189,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B4C180D18849EAD00E31D3C /* main.m in Sources */,
-				9B4C181A18849EAD00E31D3C /* ERSViewController.m in Sources */,
-				9B4C181118849EAD00E31D3C /* ERSAppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9B4C181D18849EAD00E31D3C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9B4C182F18849EAD00E31D3C /* BubbleButtonDemoTests.m in Sources */,
+				9B4C181A18849EAD00E31D3C /* DemoViewController.m in Sources */,
+				9B4C183D18859A0200E31D3C /* RSExplodingButton.m in Sources */,
+				9B4C181118849EAD00E31D3C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		9B4C182718849EAD00E31D3C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9B4C17FC18849EAD00E31D3C /* BubbleButtonDemo */;
-			targetProxy = 9B4C182618849EAD00E31D3C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9B4C180918849EAD00E31D3C /* InfoPlist.strings */ = {
@@ -301,14 +220,6 @@
 				9B4C181618849EAD00E31D3C /* Base */,
 			);
 			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		9B4C182B18849EAD00E31D3C /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9B4C182C18849EAD00E31D3C /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -347,7 +258,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -381,7 +292,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -394,9 +305,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BubbleButtonDemo/BubbleButtonDemo-Prefix.pch";
-				INFOPLIST_FILE = "BubbleButtonDemo/BubbleButtonDemo-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "ExplodingButtonDemo/ExplodingButtonDemo-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/ExplodingButtonDemo/ExplodingButtonDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = ExplodingButtonDemo;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -407,59 +319,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BubbleButtonDemo/BubbleButtonDemo-Prefix.pch";
-				INFOPLIST_FILE = "BubbleButtonDemo/BubbleButtonDemo-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "ExplodingButtonDemo/ExplodingButtonDemo-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/ExplodingButtonDemo/ExplodingButtonDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = ExplodingButtonDemo;
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		9B4C183618849EAD00E31D3C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BubbleButtonDemo.app/BubbleButtonDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BubbleButtonDemo/BubbleButtonDemo-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "BubbleButtonDemoTests/BubbleButtonDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		9B4C183718849EAD00E31D3C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BubbleButtonDemo.app/BubbleButtonDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BubbleButtonDemo/BubbleButtonDemo-Prefix.pch";
-				INFOPLIST_FILE = "BubbleButtonDemoTests/BubbleButtonDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9B4C17F818849EAD00E31D3C /* Build configuration list for PBXProject "BubbleButtonDemo" */ = {
+		9B4C17F818849EAD00E31D3C /* Build configuration list for PBXProject "ExplodingButtonDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9B4C183018849EAD00E31D3C /* Debug */,
@@ -468,21 +339,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B4C183218849EAD00E31D3C /* Build configuration list for PBXNativeTarget "BubbleButtonDemo" */ = {
+		9B4C183218849EAD00E31D3C /* Build configuration list for PBXNativeTarget "ExplodingButtonDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9B4C183318849EAD00E31D3C /* Debug */,
 				9B4C183418849EAD00E31D3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		9B4C183518849EAD00E31D3C /* Build configuration list for PBXNativeTarget "BubbleButtonDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9B4C183618849EAD00E31D3C /* Debug */,
-				9B4C183718849EAD00E31D3C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

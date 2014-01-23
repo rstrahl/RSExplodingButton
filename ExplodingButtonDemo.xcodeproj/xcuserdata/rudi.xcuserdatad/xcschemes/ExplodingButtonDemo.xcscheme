@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9B4C17FC18849EAD00E31D3C"
-               BuildableName = "BubbleButtonDemo.app"
-               BlueprintName = "BubbleButtonDemo"
-               ReferencedContainer = "container:BubbleButtonDemo.xcodeproj">
+               BuildableName = "ExplodingButtonDemo.app"
+               BlueprintName = "ExplodingButtonDemo"
+               ReferencedContainer = "container:ExplodingButtonDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9B4C182018849EAD00E31D3C"
-               BuildableName = "BubbleButtonDemoTests.xctest"
-               BlueprintName = "BubbleButtonDemoTests"
-               ReferencedContainer = "container:BubbleButtonDemo.xcodeproj">
+               BuildableName = "ExplodingButtonDemoTests.xctest"
+               BlueprintName = "ExplodingButtonDemoTests"
+               ReferencedContainer = "container:ExplodingButtonDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9B4C17FC18849EAD00E31D3C"
-            BuildableName = "BubbleButtonDemo.app"
-            BlueprintName = "BubbleButtonDemo"
-            ReferencedContainer = "container:BubbleButtonDemo.xcodeproj">
+            BuildableName = "ExplodingButtonDemo.app"
+            BlueprintName = "ExplodingButtonDemo"
+            ReferencedContainer = "container:ExplodingButtonDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9B4C17FC18849EAD00E31D3C"
-            BuildableName = "BubbleButtonDemo.app"
-            BlueprintName = "BubbleButtonDemo"
-            ReferencedContainer = "container:BubbleButtonDemo.xcodeproj">
+            BuildableName = "ExplodingButtonDemo.app"
+            BlueprintName = "ExplodingButtonDemo"
+            ReferencedContainer = "container:ExplodingButtonDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9B4C17FC18849EAD00E31D3C"
-            BuildableName = "BubbleButtonDemo.app"
-            BlueprintName = "BubbleButtonDemo"
-            ReferencedContainer = "container:BubbleButtonDemo.xcodeproj">
+            BuildableName = "ExplodingButtonDemo.app"
+            BlueprintName = "ExplodingButtonDemo"
+            ReferencedContainer = "container:ExplodingButtonDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
