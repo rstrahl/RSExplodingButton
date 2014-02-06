@@ -10,9 +10,9 @@
 
 @interface RSExplodingButton()
 
-@property (nonatomic, assign) CGRect            defaultFrame;
-@property (nonatomic, assign) CGRect            explodedFrame;
-@property (nonatomic, strong) NSMutableArray    *leafButtons;
+@property (assign, nonatomic) CGRect defaultFrame;
+@property (assign, nonatomic) CGRect explodedFrame;
+@property (strong, nonatomic) NSMutableArray *leafButtons;
 
 @end
 
@@ -22,7 +22,7 @@
 {
     if (self = [super initWithCoder:aDecoder])
     {
-        [self configureFrame];
+        [self configureButton];
     }
     return self;
 }
@@ -31,21 +31,23 @@
 {
     if (self = [super initWithFrame:frame])
     {
-        [self configureFrame];
+        [self configureButton];
     }
     return self;
 }
 
-- (void)drawRect:(CGRect)rect
+- (void)setHighlighted:(BOOL)highlighted
 {
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    UIColor *color = [UIColor blueColor];
-    CGContextSetFillColorWithColor(context, color.CGColor);
-    CGContextFillRect(context, self.bounds);
+    NSLog(@"highlighted");
+    [super setHighlighted:highlighted];
+    self.backgroundColor = (highlighted) ? _highlightedColor : _defaultBackgroundColor;
 }
 
-- (void)configureFrame
+#pragma mark - Helper
+
+- (void)configureButton
 {
+    _defaultBackgroundColor = self.backgroundColor;
     self.leafButtons = [NSMutableArray array];
     self.layer.cornerRadius = self.frame.size.width / 2;
     _defaultFrame = self.frame;
@@ -61,6 +63,9 @@
 - (RSExplodingButton *)addButton
 {
     RSExplodingButton *button = [[RSExplodingButton alloc] initWithFrame:self.frame];
+    [button setHighlightedColor:self.highlightedColor];
+    [button setBackgroundColor:_defaultBackgroundColor];
+    [button setDefaultBackgroundColor:_defaultBackgroundColor];
     [self.leafButtons addObject:button];
     if (self.superview)
     {
@@ -100,6 +105,16 @@
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
     NSLog(@"Touches ended");
+    UITouch *touch = [touches anyObject];
+#warning Code Review - can this be optimized?
+    for (UIControl *button in _leafButtons)
+    {
+        if([[self hitTest:[touch locationInView:button] withEvent:event] isKindOfClass:[RSExplodingButton class]])
+        {
+            NSLog(@"touch detected on button");
+            [button sendActionsForControlEvents:UIControlEventTouchUpInside];
+        }
+    }
     [self implodeButton];
 }
 
@@ -107,11 +122,17 @@
 {
     NSLog(@"Touches moved");
     UITouch *touch = [touches anyObject];
+#warning Code Review - can this be optimized?
     for (UIControl *button in _leafButtons)
     {
         if([[self hitTest:[touch locationInView:button] withEvent:event] isKindOfClass:[RSExplodingButton class]])
         {
             NSLog(@"touch detected on button");
+            [button setHighlighted:YES];
+        }
+        else
+        {
+            [button setHighlighted:NO];
         }
     }
 }

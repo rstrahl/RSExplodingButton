@@ -20,9 +20,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [_explodingButton setHighlightedColor:[UIColor redColor]];
     for (int i = 0; i < 4; i++)
     {
-        [self.explodingButton addButtonWithTitle:[NSString stringWithFormat:@"%d", i]];
+        RSExplodingButton *button = [self.explodingButton addButtonWithTitle:[NSString stringWithFormat:@"%d", i]];
+        [button addTarget:self action:@selector(buttonWasPressed:) forControlEvents:UIControlEventTouchUpInside];
     }
 }
 
@@ -36,7 +38,13 @@
 
 - (IBAction)buttonWasPressed:(id)sender
 {
-    
+    UIButton *button = (UIButton *)sender;
+    UIAlertView *buttonTapAlert = [[UIAlertView alloc] initWithTitle:@"Button Tapped"
+                                                             message:[NSString stringWithFormat:@"Button %@ was tapped", button.titleLabel.text]
+                                                            delegate:nil
+                                                   cancelButtonTitle:@"OK"
+                                                   otherButtonTitles:nil];
+    [buttonTapAlert show];
 }
 
 @end

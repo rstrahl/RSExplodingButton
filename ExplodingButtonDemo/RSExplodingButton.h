@@ -15,4 +15,7 @@
 - (RSExplodingButton *)addButtonWithTitle:(NSString *)title;
 - (RSExplodingButton *)addButtonWithIcon:(UIImage *)image;
 
+@property (strong, nonatomic) UIColor *highlightedColor;
+@property (strong, nonatomic) UIColor *defaultBackgroundColor;
+
 @end
