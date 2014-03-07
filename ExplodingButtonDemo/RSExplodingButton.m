@@ -60,6 +60,12 @@
     self.layer.borderColor = [_highlightedColor CGColor];
 }
 
+- (void)setDefaultColor:(UIColor *)defaultColor
+{
+    _defaultColor = defaultColor;
+    self.backgroundColor = _defaultColor;
+}
+
 #pragma mark - Method Overrides
 
 - (void)setHighlighted:(BOOL)highlighted
@@ -83,12 +89,6 @@
         }
     }
     [super setHighlighted:highlighted];
-}
-
-- (void)setDefaultColor:(UIColor *)defaultColor
-{
-    _defaultColor = defaultColor;
-    self.backgroundColor = _defaultColor;
 }
 
 #pragma mark - Add/Remove Sub-Buttons
