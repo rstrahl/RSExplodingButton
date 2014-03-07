@@ -16,6 +16,6 @@
 - (RSExplodingButton *)addButtonWithIcon:(UIImage *)image;
 
 @property (strong, nonatomic) UIColor *highlightedColor;
-@property (strong, nonatomic) UIColor *defaultBackgroundColor;
+@property (strong, nonatomic) UIColor *defaultColor;
 
 @end

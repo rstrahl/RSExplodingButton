@@ -11,6 +11,7 @@
 
 @interface DemoViewController ()
 @property (nonatomic, weak) IBOutlet RSExplodingButton   *explodingButton;
+@property (weak, nonatomic) IBOutlet UILabel *infoTextLabel;
 @end
 
 #pragma mark - UIViewController Lifecycle
@@ -20,11 +21,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [_explodingButton setHighlightedColor:[UIColor redColor]];
+    [_explodingButton setTitle:@"0" forState:UIControlStateNormal];
     for (int i = 0; i < 4; i++)
     {
-        RSExplodingButton *button = [self.explodingButton addButtonWithTitle:[NSString stringWithFormat:@"%d", i]];
-        [button addTarget:self action:@selector(buttonWasPressed:) forControlEvents:UIControlEventTouchUpInside];
+        RSExplodingButton *button = [self.explodingButton addButtonWithTitle:[NSString stringWithFormat:@"%d", i+1]];
+        [button addTarget:self action:@selector(didTouchUpButton:) forControlEvents:UIControlEventTouchUpInside];
     }
 }
 
@@ -35,8 +36,31 @@
 }
 
 #pragma mark - IBActions
+- (IBAction)didTouchDownButton:(id)sender
+{
+    [UIView animateWithDuration:0.25f delay:0.0f options:UIViewAnimationOptionCurveEaseOut animations:^{
+        self.infoTextLabel.alpha = 0;
+    } completion:^(BOOL finished) {
+        self.infoTextLabel.text = @"...Drag finger to option and release";
+        [UIView animateWithDuration:0.25f delay:0.0f options:UIViewAnimationOptionCurveEaseOut animations:^{
+            self.infoTextLabel.alpha = 1.0f;
+        } completion:nil];
+    }];
+}
 
-- (IBAction)buttonWasPressed:(id)sender
+- (IBAction)didTouchUpRootButton:(id)sender
+{
+    [UIView animateWithDuration:0.25f delay:0.0f options:UIViewAnimationOptionCurveEaseOut animations:^{
+        self.infoTextLabel.alpha = 0;
+    } completion:^(BOOL finished) {
+        self.infoTextLabel.text = @"Tap and Hold to Activate...";
+        [UIView animateWithDuration:0.25f delay:0.0f options:UIViewAnimationOptionCurveEaseOut animations:^{
+            self.infoTextLabel.alpha = 1.0f;
+        } completion:nil];
+    }];
+}
+
+- (IBAction)didTouchUpButton:(id)sender
 {
     UIButton *button = (UIButton *)sender;
     UIAlertView *buttonTapAlert = [[UIAlertView alloc] initWithTitle:@"Button Tapped"
@@ -45,6 +69,14 @@
                                                    cancelButtonTitle:@"OK"
                                                    otherButtonTitles:nil];
     [buttonTapAlert show];
+    [UIView animateWithDuration:0.25f delay:0.0f options:UIViewAnimationOptionCurveEaseOut animations:^{
+        self.infoTextLabel.alpha = 0;
+    } completion:^(BOOL finished) {
+        self.infoTextLabel.text = @"Tap and Hold to Activate...";
+        [UIView animateWithDuration:0.25f delay:0.0f options:UIViewAnimationOptionCurveEaseOut animations:^{
+            self.infoTextLabel.alpha = 1.0f;
+        } completion:nil];
+    }];
 }
 
 @end
