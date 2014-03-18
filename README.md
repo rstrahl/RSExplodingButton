@@ -3,6 +3,8 @@ RSExplodingButton
 
 A custom UIButton inspired by the ["radial menu"](http://en.wikipedia.org/wiki/Pie_menu) that displays any number of subordinate buttons ("leaf buttons") when tapped and held.
 
+<p align="center"><img src="https://s3.amazonaws.com/me.rudistrahl/images/RSExplodingButtonAnimatedSample.gif" alt="RSExplodingButton Sample Animation" /></p>
+
 It's designed to be a drop-in replacement for UIButton, supporting `UIControlEvent` for user-interaction and `UIControlState` for controlling its changes in appearance.  Thus it supports being used and configured from Interface-Builder as well as directly from code.
 
 A simple interactive demo project is included.
